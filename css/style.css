@@ -1,0 +1,19 @@
+body {
+  background: pink;
+}
+
+header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.header-title {
+  margin-top: 0;
+}
+
+.header-image {
+  max-width: 440px;
+}
