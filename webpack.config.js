@@ -28,10 +28,12 @@ module.exports = {
             }
         ]
     },
-    resolve: {},
+    resolve: {extensions: ['.js', '.css']},
     devServer: {
         historyApiFallback: true,
-        noInfo: true
+        noInfo: true,
+        hot: true,
+        // contentBase: './dist',
     },
     performance: {
         hints: false
@@ -43,7 +45,7 @@ if (process.env.NODE_ENV !== 'production') {
     module.exports.plugins = (module.exports.plugins || []).concat([
         new HtmlWebpackPlugin({
             template: './index.html'
-        })
+        }),
     ])
 }
 
